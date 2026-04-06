@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { CLINIC } from "@/lib/constants";
 
@@ -7,15 +6,7 @@ export function Footer() {
     <footer className="bg-blue-950 text-white py-16 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div>
-          <div className="mb-6">
-            <Image
-              src="/logo-omc.png"
-              alt="OdontoMedCenter"
-              width={180}
-              height={48}
-              className="h-10 w-auto brightness-0 invert"
-            />
-          </div>
+          <div className="text-3xl font-black text-white italic mb-6">OMC</div>
           <p className="text-sm leading-relaxed text-blue-100/60">
             Sua clínica odontológica de referência em Lagoa Santa. Transformando
             vidas através do sorriso.
