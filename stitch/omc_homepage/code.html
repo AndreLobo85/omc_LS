@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OdontoMedCenter Lagoa Santa | OMC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#495b9b",
+                    "outline-variant": "#c5c5d2",
+                    "error": "#ba1a1a",
+                    "primary-fixed": "#dce1ff",
+                    "primary": "#001754",
+                    "on-surface": "#1a1c1c",
+                    "background": "#faf9f8",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#dadad9",
+                    "on-primary-fixed": "#00164f",
+                    "secondary-fixed": "#ffdea3",
+                    "surface-container-high": "#e9e8e7",
+                    "surface-container-highest": "#e3e2e1",
+                    "tertiary-container": "#34332c",
+                    "surface-container-low": "#f4f3f2",
+                    "on-primary-fixed-variant": "#304381",
+                    "on-tertiary-fixed": "#1c1c15",
+                    "on-secondary-fixed-variant": "#594312",
+                    "surface-bright": "#faf9f8",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "outline": "#757681",
+                    "on-background": "#1a1c1c",
+                    "inverse-surface": "#2f3130",
+                    "secondary-fixed-dim": "#e3c285",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-primary": "#b6c4ff",
+                    "tertiary": "#1f1e17",
+                    "on-tertiary-container": "#9e9b91",
+                    "surface-variant": "#e3e2e1",
+                    "surface-container": "#eeeeed",
+                    "secondary": "#735b28",
+                    "primary-container": "#1a2e6c",
+                    "secondary-container": "#fedb9c",
+                    "on-tertiary-fixed-variant": "#48473f",
+                    "on-surface-variant": "#454650",
+                    "inverse-on-surface": "#f1f0f0",
+                    "tertiary-fixed-dim": "#cac6bc",
+                    "on-secondary-container": "#785f2b",
+                    "error-container": "#ffdad6",
+                    "surface": "#faf9f8",
+                    "primary-fixed-dim": "#b6c4ff",
+                    "on-primary-container": "#8698dc",
+                    "tertiary-fixed": "#e6e2d7",
+                    "on-secondary-fixed": "#261900"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+      }
+    </style>
+</head>
+<body class="bg-background font-body text-on-background selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-blue-950/80 backdrop-blur-md shadow-[0px_10px_40px_rgba(26,28,28,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-blue-950 dark:text-white tracking-tighter">OMC</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Inter'] font-bold tracking-tight text-blue-900 dark:text-white border-b-2 border-yellow-600 pb-1" href="#">Início</a>
+<a class="font-['Inter'] font-bold tracking-tight text-blue-800/70 dark:text-blue-200/70 hover:text-yellow-700 transition-colors" href="#">Especialidades</a>
+<a class="font-['Inter'] font-bold tracking-tight text-blue-800/70 dark:text-blue-200/70 hover:text-yellow-700 transition-colors" href="#">Implantes</a>
+<a class="font-['Inter'] font-bold tracking-tight text-blue-800/70 dark:text-blue-200/70 hover:text-yellow-700 transition-colors" href="#">Sobre Nós</a>
+<a class="font-['Inter'] font-bold tracking-tight text-blue-800/70 dark:text-blue-200/70 hover:text-yellow-700 transition-colors" href="#">Depoimentos</a>
+<a class="font-['Inter'] font-bold tracking-tight text-blue-800/70 dark:text-blue-200/70 hover:text-yellow-700 transition-colors" href="#">Contato</a>
+<button class="bg-primary-container text-white px-6 py-2 rounded-lg font-bold hover:bg-secondary transition-all scale-95 active:opacity-80">Agendar Avaliação</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="extreme close-up of a perfectly aligned bright white smile with warm natural lighting and soft blurred background of a modern clinic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzdVxoQUQmDGyUQne4eGZaH6HWgzTgna_TLOS15meYO1iSftiXkaLekr7MZESw7wuyECM5CVaUgeCgZMdEdl1iRfMtcvrfH_1_0CbZT-QQwlLO5DZGsKMmquJJIqnr7qoH0zlHPLQHbTEP-QMpjbMUWBpG_1W-TCH3QXIpZng4jr8liuClNN1iZjZop81VjBjokmHWNI3Kvzmt22YBecEU_zaw9yzX2j3quCz_zU8F29LgtOYCwrlnBXZdkzM1qjDs0TdBJHQFiqCj"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl text-white">
+<span class="text-secondary-fixed font-bold tracking-widest uppercase text-sm mb-4 block">Lagoa Santa / MG</span>
+<h1 class="font-headline text-5xl md:text-7xl font-black leading-[1.1] mb-6 tracking-tighter">Seu Sorriso Perfeito Começa Aqui</h1>
+<p class="text-lg md:text-xl text-blue-100/90 mb-10 font-medium">Especialistas em Implantes Dentários em Lagoa Santa — Avaliação Gratuita para transformar sua vida.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:brightness-110 transition-all shadow-xl">
+<span class="material-symbols-outlined">chat</span> Agendar pelo WhatsApp
+                    </button>
+<button class="border-2 border-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all">
+                        Conhecer os Tratamentos
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Bar -->
+<section class="bg-surface-container-lowest py-10 relative z-20 -mt-12 mx-8 rounded-2xl shadow-xl max-w-7xl lg:mx-auto border border-outline-variant/20">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center divide-x divide-outline-variant/30">
+<div class="flex flex-col items-center text-center px-4">
+<span class="material-symbols-outlined text-secondary text-3xl mb-2">verified</span>
+<p class="text-xs font-bold uppercase tracking-tighter text-primary">Implantes Straumann</p>
+</div>
+<div class="flex flex-col items-center text-center px-4">
+<span class="material-symbols-outlined text-secondary text-3xl mb-2">3d_rotation</span>
+<p class="text-xs font-bold uppercase tracking-tighter text-primary">Odontologia 3D</p>
+</div>
+<div class="flex flex-col items-center text-center px-4">
+<span class="material-symbols-outlined text-secondary text-3xl mb-2">favorite</span>
+<p class="text-xs font-bold uppercase tracking-tighter text-primary">Atendimento Humanizado</p>
+</div>
+<div class="flex flex-col items-center text-center px-4">
+<span class="material-symbols-outlined text-secondary text-3xl mb-2">history</span>
+<p class="text-xs font-bold uppercase tracking-tighter text-primary">+3 Anos no Vetor Norte</p>
+</div>
+<div class="flex flex-col items-center text-center px-4">
+<span class="material-symbols-outlined text-secondary text-3xl mb-2">star</span>
+<p class="text-xs font-bold uppercase tracking-tighter text-primary">Avaliação Gratuita</p>
+</div>
+</div>
+</section>
+<!-- Implante em 24h Feature -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl md:text-5xl font-black text-primary mb-4 tracking-tighter">Devolvemos seu sorriso em até 24 horas</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Tecnologia avançada e planejamento digital para uma restauração rápida, segura e definitiva.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Step 1 -->
+<div class="relative group">
+<div class="bg-surface-container-low rounded-3xl p-8 h-full transition-all group-hover:bg-primary group-hover:text-white">
+<span class="text-5xl font-black text-secondary/20 mb-6 block group-hover:text-secondary-container">01</span>
+<h3 class="font-bold text-xl mb-4">Avaliação Gratuita</h3>
+<p class="text-sm opacity-80">Consulta inicial para entender seu caso e realizar os primeiros exames diagnósticos.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative group">
+<div class="bg-surface-container-low rounded-3xl p-8 h-full transition-all group-hover:bg-primary group-hover:text-white">
+<span class="text-5xl font-black text-secondary/20 mb-6 block group-hover:text-secondary-container">02</span>
+<h3 class="font-bold text-xl mb-4">Planejamento Digital 3D</h3>
+<p class="text-sm opacity-80">Mapeamento preciso da sua boca para garantir o posicionamento perfeito do implante.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative group">
+<div class="bg-surface-container-low rounded-3xl p-8 h-full transition-all group-hover:bg-primary group-hover:text-white">
+<span class="text-5xl font-black text-secondary/20 mb-6 block group-hover:text-secondary-container">03</span>
+<h3 class="font-bold text-xl mb-4">Colocação do Implante</h3>
+<p class="text-sm opacity-80">Procedimento cirúrgico rápido e indolor utilizando as melhores técnicas da atualidade.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative group">
+<div class="bg-surface-container-low rounded-3xl p-8 h-full transition-all group-hover:bg-primary group-hover:text-white">
+<span class="text-5xl font-black text-secondary/20 mb-6 block group-hover:text-secondary-container">04</span>
+<h3 class="font-bold text-xl mb-4">Sorriso Restaurado</h3>
+<p class="text-sm opacity-80">Finalização do processo com a prótese fixa, devolvendo função e estética completa.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Specialties Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div>
+<h2 class="font-headline text-4xl md:text-5xl font-black text-primary mb-4 tracking-tighter">Nossas Especialidades</h2>
+<p class="text-on-surface-variant">Soluções completas para a saúde bucal da sua família em um só lugar.</p>
+</div>
+<button class="text-secondary font-bold flex items-center gap-2 hover:gap-4 transition-all">Ver tudo <span class="material-symbols-outlined">arrow_forward</span></button>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Specialty Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/10 hover:shadow-2xl transition-all">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6" data-weight="fill">medical_services</span>
+<h4 class="font-bold text-lg text-primary">Implantodontia</h4>
+</div>
+<!-- Specialty Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/10 hover:shadow-2xl transition-all">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">grid_view</span>
+<h4 class="font-bold text-lg text-primary">Ortodontia</h4>
+</div>
+<!-- Specialty Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/10 hover:shadow-2xl transition-all">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">pulmonology</span>
+<h4 class="font-bold text-lg text-primary">Endodontia (Canal)</h4>
+</div>
+<!-- Specialty Card 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/10 hover:shadow-2xl transition-all">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">dentistry</span>
+<h4 class="font-bold text-lg text-primary">Prótese Dental</h4>
+</div>
+<!-- Specialty Card 5 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/10 hover:shadow-2xl transition-all">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">child_care</span>
+<h4 class="font-bold text-lg text-primary">Odontopediatria</h4>
+</div>
+<!-- Specialty Card 6 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/10 hover:shadow-2xl transition-all">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">visibility</span>
+<h4 class="font-bold text-lg text-primary">Lentes de Contato</h4>
+</div>
+<!-- Specialty Card 7 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/10 hover:shadow-2xl transition-all">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">healing</span>
+<h4 class="font-bold text-lg text-primary">Periodontia</h4>
+</div>
+<!-- Specialty Card 8 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/10 hover:shadow-2xl transition-all">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">face</span>
+<h4 class="font-bold text-lg text-primary">Estética Facial</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Before/After Gallery -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl md:text-5xl font-black text-primary mb-4 tracking-tighter">Transformações Reais</h2>
+<p class="text-on-surface-variant">Conheça o impacto real dos nossos tratamentos na vida dos nossos pacientes.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group overflow-hidden rounded-3xl shadow-lg relative aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="side by side comparison of a dental patient before treatment and after receiving high quality dental implants and veneers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRPugexTpYYhG4uIelI7Ot9mLioXSiDNyMtTklONh4tqqRo1ljU3mdmhXmOvreoV9RVW3crWpTdvntJ7OfwlyKVudbw4REbnJTIinpVqYT9JTJvkQPak25o6mg2nz2fvZgMCXrwFY02j9R00DBgBUUMjYc7fpmHkNzyiQKMMwABj-0Dv1UFHHIFzg5YOkWFVT-a0fMwKMwb6p-VZ3iHRFD3xhTcAKyxy7DCJfr3y84i3LnR7X6Ejlrl0qbsCOlNSz_sb0KfI5iiG1Q"/>
+<div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl text-xs font-bold text-primary">CASO 01: IMPLANTES COMPLETOS</div>
+</div>
+<div class="group overflow-hidden rounded-3xl shadow-lg relative aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="close up of dental restoration before and after comparison showing natural looking porcelain veneers and perfect gum health" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1ZHG8Lcu7I-OufVLW8ajsipdlhscKynjcUowCgDVDVF1p2rcOBnUXvg6Db0JOpjKq5t9E70s9NjBQzIcNcSaegXdhpan93BA4BbpvP2zpayTj1crrZ_iERzS0Whcnh6S9Lq6_3xx6Qtvjp4ZIAgH4xdvZ1wSM7tu-hDiYgss-OlR4Xg0_Dzao_YCfC8fOsJSXtaA9_mnVcELXumb8R1lkcRs_1GQnN8otvkxTSYyKoO6aA35BuzYmzDPm53eWDxFDJdPSncUvnjjR"/>
+<div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl text-xs font-bold text-primary">CASO 02: LENTES DE CONTATO</div>
+</div>
+<div class="group overflow-hidden rounded-3xl shadow-lg relative aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="professional dental before and after shot showing dental alignment and whitening results on a male patient" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOOfLqoHX9fElZo7iVu4AfOCHtO4fwiRjQ_DLcELH7Fvgy-rUiygQhpqj7pjpDHOV1vGm4xpYaUyjp9z6Fal2sUCJK-fq-_gZi3185UPVsjSh5Sga33gLiKX-rqXRu0z16CPXJ5Wrl0V1b6DlUbcMT_ZKrqTnQD97RrbFcZPhhWpAcuBRq57f06G-LKxRXbj4pq_1lc2kmplZRkw2keL1tS636oHDM6vu5wBHG3RZHuHk4nK1K7Y1wpcowgxoBgOBXFse6EP4kKHYY"/>
+<div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl text-xs font-bold text-primary">CASO 03: REABILITAÇÃO ORAL</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="bg-primary text-white px-10 py-4 rounded-xl font-bold hover:bg-secondary transition-all shadow-lg">Ver Mais Resultados</button>
+</div>
+</section>
+<!-- Social Proof (Dark Blue Background) -->
+<section class="bg-primary py-20">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+<div>
+<h3 class="text-secondary-fixed text-4xl md:text-5xl font-black mb-2 tracking-tighter">500+</h3>
+<p class="text-blue-100/70 text-sm font-bold uppercase tracking-widest">Implantes Realizados</p>
+</div>
+<div>
+<h3 class="text-secondary-fixed text-4xl md:text-5xl font-black mb-2 tracking-tighter">4.9★</h3>
+<p class="text-blue-100/70 text-sm font-bold uppercase tracking-widest">No Google Reviews</p>
+</div>
+<div>
+<h3 class="text-secondary-fixed text-4xl md:text-5xl font-black mb-2 tracking-tighter">3.000+</h3>
+<p class="text-blue-100/70 text-sm font-bold uppercase tracking-widest">Pacientes Satisfeitos</p>
+</div>
+<div>
+<h3 class="text-secondary-fixed text-lg md:text-xl font-black mb-2 leading-tight">Única com Straumann</h3>
+<p class="text-blue-100/70 text-sm font-bold uppercase tracking-widest">No Vetor Norte</p>
+</div>
+</div>
+</section>
+<!-- Video Testimonials -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<h2 class="font-headline text-4xl font-black text-primary mb-12 tracking-tighter text-center">O Que Nossos Pacientes Dizem</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="relative group aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="smiling female patient in a modern dental clinic setting looking at the camera with joy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb4RLMX451pGG_oZmv78-OQ0u0EAWhQjWONlqcteeU4XD8RpnNg47A4x2YMm4qpO53YgR1M4GIx5KYOedfpQBX-1rFK5Wxh6cDAya70alw2CK5siCnx_5ZHpRhkRY-fPLShfXz39NAWmPeFWm05o2DRcwkQUqOGnWUfaNHd3yU4ewmyjusjh274MEm_xpzD0lCUtpG3C2mhLlVgnzcD2yWK4kX9kCYrb9_3QkDfSw9k7s8xmpDB5S83x9KPteu3eeKp8IBDjMLWOgU"/>
+<div class="absolute inset-0 bg-black/30 flex items-center justify-center transition-opacity group-hover:bg-black/40">
+<span class="material-symbols-outlined text-white text-6xl cursor-pointer" data-weight="fill">play_circle</span>
+</div>
+<div class="absolute bottom-6 left-6 right-6 text-white">
+<p class="font-bold italic">"Minha vida mudou após o implante em 24h!"</p>
+<p class="text-sm opacity-80">- Maria Silva</p>
+</div>
+</div>
+<div class="relative group aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="middle aged man smiling confidently in a professional studio setting with clean dental work" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtQib4-KvS1J_6uUNxkPUQjUlxjGddWlAr3J66o7y32JLvybUdqlhkwr0G31dyROPyvgu4GNtsXNjsETI0TTKLyad1UNqJNpHDWFofX9Ckg7g1aQuh3G_IdmkjdhRO7GkAl1Fow2V9yc99noOdXAVlmG5McFf6XIyoXoyDrMao8vvihoTKIt-NzHDSLR1PGgrNa2Fn8Brp6h0luI_atPqV5Z7TsELCywRkhpNGVFRoiwQI-Vwp8dDlL3LzCiUwiFY0fY52Vxyh8RSF"/>
+<div class="absolute inset-0 bg-black/30 flex items-center justify-center transition-opacity group-hover:bg-black/40">
+<span class="material-symbols-outlined text-white text-6xl cursor-pointer" data-weight="fill">play_circle</span>
+</div>
+<div class="absolute bottom-6 left-6 right-6 text-white">
+<p class="font-bold italic">"O atendimento é excepcional, me senti em casa."</p>
+<p class="text-sm opacity-80">- José Oliveira</p>
+</div>
+</div>
+<div class="relative group aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="happy young woman laughing showing off her perfect smile after orthodontic treatment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtAYKEhDERSGV3WKXmuaNlmuTAAtFa82YsbMBBL6wqhD_jBMaKr3JMZIghM0n21l-ye5aMLHD499NkHBQedN_OOMvVmW8ViJcNTVLV81nFPetd5Wujc-xcZtcdCQ0k4WJTTuGAPe43SgvVe8rbROVjZwcGsU2DcpX6nby2LFuA8TdYYqFFm2eUpBeHObXqiLhsgB6swqSyzs85MArBQ2CTjFLr3mMhbURRreRvNWHdVjUiBuscP2KVZTqEVjE0DLpkPhb5FeDhxUUY"/>
+<div class="absolute inset-0 bg-black/30 flex items-center justify-center transition-opacity group-hover:bg-black/40">
+<span class="material-symbols-outlined text-white text-6xl cursor-pointer" data-weight="fill">play_circle</span>
+</div>
+<div class="absolute bottom-6 left-6 right-6 text-white">
+<p class="font-bold italic">"Perdi o medo de dentista graças à equipe da OMC."</p>
+<p class="text-sm opacity-80">- Ana Paula</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet the Team -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="font-headline text-4xl font-black text-primary mb-16 tracking-tighter text-center">Nossa Equipe Especializada</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex flex-col items-center">
+<div class="w-64 h-80 rounded-[4rem] overflow-hidden mb-6 shadow-xl border-4 border-secondary/10">
+<img class="w-full h-full object-cover" data-alt="professional portrait of a friendly male dentist in a white lab coat with modern medical equipment in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1eX9W4L01N4RcXJKhWHPkdhO0SvSr_4sLyLMTAty6ZyQwoMUhCtiiRa8WzdLSxW0eAbECSyW7_9fmREeVElB1FiM8CZqoahYunX96mujlegm6bVGA0aT7OqchVvlJ3BAw7NZb9_3hel7jPDJHzfAHd2cYm8eDfWAqKww_phfsij6j8toPfX6x3n2YpFTCbu1W8QFsNdkMnqnSlwtsWiEEokE5vavncxyK6WRJmikOsWUZ7LKEFtif63Z7higFzlZaNEFW6l37oEBP"/>
+</div>
+<h3 class="font-bold text-2xl text-primary">Dr. Matheus</h3>
+<p class="text-secondary font-bold text-sm tracking-widest uppercase">Especialista em Implantodontia</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-64 h-80 rounded-[4rem] overflow-hidden mb-6 shadow-xl border-4 border-secondary/10">
+<img class="w-full h-full object-cover" data-alt="professional portrait of a female dentist smiling in a modern dental clinic setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAReTZFX-9ozHeUa9TdO-3uplQFVCNdMee3VvF1oKwYPITuNPx1YJ4bP5DpPAhIZOYxb0H32gDMOnWMcSfFpJQv--tyZ7hMpOq-YLx25w0WTuwNEpnv22gFdc6_3d8ZFzKGW65wbMaLf8feDbvFFcWTRP9MDS-oGvdhICN4QVELQQYCqQ1b8zWIsOECu4KkuRZlTydV7s0m2aSsg-mZTIzHPg3BIR9AmHtdnH3Bav1LbePu9G_N-V2LexameDpcEUt6Qjc-A-qyMxGg"/>
+</div>
+<h3 class="font-bold text-2xl text-primary">Dra. Fernanda</h3>
+<p class="text-secondary font-bold text-sm tracking-widest uppercase">Ortodontia e Estética</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-64 h-80 rounded-[4rem] overflow-hidden mb-6 shadow-xl border-4 border-secondary/10">
+<img class="w-full h-full object-cover" data-alt="smiling male dentist professional portrait in modern clinical environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE4DrHqnm23B4nEZtIImDm9C7EPRLf67xmSq5KaSPPyJVlHTVjrPsDsnVVBg2ucArVxMPrrBUfp2pTz3c7vXNiK-0ekyztSMME1KoO8s1E3mZJ0sJfNHz77rB3u3YwaZGHInEj3X0mC13Kkwexx2nSwhb1gUYCZkMDIj3n3hRXIPOynTS36-kBB73UV6uA1ZThXiNtayBT9PsgKiaXJUfsJxTiU9xm8t-HnWkb9DFgKhtLVom32l4g-TOVHqGfPFxfBOHcTCAw1Frm"/>
+</div>
+<h3 class="font-bold text-2xl text-primary">Dr. Ricardo</h3>
+<p class="text-secondary font-bold text-sm tracking-widest uppercase">Endodontia Avançada</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Straumann Partner -->
+<section class="py-24 px-8">
+<div class="max-w-7xl mx-auto bg-primary-container rounded-[3rem] overflow-hidden flex flex-col lg:flex-row items-center shadow-3xl">
+<div class="p-12 lg:p-20 lg:w-1/2">
+<img class="h-10 mb-8 brightness-0 invert opacity-50" data-alt="Straumann dental implants logo with minimalist gold and white text on a deep blue background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFrsEgn1Bxs_zCYdfXmVpFJcRUjyYwCIYRzD60jGelZqhAiI-i6tUesDC9RnLGXHO4vihLeIdxCOs-cf_r6WU_mqm5KA4sj3s91LiTe7x2gQy3hBMsePSIxVquesPgId6hbuCSC5n2gIBgJew08StqBMubU_9Ir4he3zliigmQamzCt28SNuK-Lgc_YRSouPnQzkokf5vPfRqPYLHyXWgUyHSr-uvXzuTUMMaFYNS-toSMweanrQl4jlNkvRomTbS6i3AVaNrN4lB4"/>
+<h2 class="font-headline text-3xl md:text-5xl font-black text-white mb-8 tracking-tighter leading-tight">Implantes Straumann: O Padrão Ouro da Implantodontia</h2>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-4 text-blue-100">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+                        Cicatrizar rápida e previsível
+                    </li>
+<li class="flex items-center gap-4 text-blue-100">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+                        Líder mundial em tecnologia dental
+                    </li>
+<li class="flex items-center gap-4 text-blue-100">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+                        Garantia vitalícia internacional
+                    </li>
+</ul>
+<button class="bg-secondary text-white px-10 py-4 rounded-xl font-bold hover:bg-secondary-fixed-dim hover:text-on-secondary-fixed transition-all">Solicitar Orçamento Straumann</button>
+</div>
+<div class="lg:w-1/2 h-full min-h-[400px]">
+<img class="w-full h-full object-cover" data-alt="high-tech 3D model of a dental implant being placed in a digital mouth simulation with blue tech highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2Sm7C6T68wfk2xCvcez9HLI0JRWAuK4mvLRIYkSBG2MWMVbcbWA7SpJyI7eFhSikTHDtnCnZbu9gqxaRkkIHxu_1UVJUQAzGCnqC9znmNsfF9V5iMpERZcCh1wnghze_y8CRY2KucXNAgbiZQ9YcWUvboHSO8QcdKvwwAxZvKH6cg7zqvyzX6VuNIh-Mjn37sSEKjYu-Bg1Htv_i3FWJXhUsqrIDNYTTfZbKqRELHYMrrOYKpKlNHrKshDEl6maDD0A8e6dboBkhn"/>
+</div>
+</div>
+</section>
+<!-- Location/Contact -->
+<section class="py-24 bg-surface-container-low px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div class="rounded-[2.5rem] overflow-hidden shadow-2xl h-[500px]">
+<iframe allowfullscreen="" class="w-full h-full border-0" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.2913164996963!2d-43.8967812239324!3d-19.64687508167816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDM4JzQ4LjgiUyA0M8KwNTMnNDAuNSJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr">
+</iframe>
+</div>
+<div class="flex flex-col justify-center">
+<h2 class="font-headline text-4xl font-black text-primary mb-8 tracking-tighter">Onde Estamos</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-secondary text-3xl">location_on</span>
+<div>
+<h4 class="font-bold text-lg text-primary">Endereço</h4>
+<p class="text-on-surface-variant">Rua Conde Dolabela, 1025, Várzea<br/>Lagoa Santa - MG</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-secondary text-3xl">schedule</span>
+<div>
+<h4 class="font-bold text-lg text-primary">Horário de Funcionamento</h4>
+<p class="text-on-surface-variant">Segunda a Sexta: 08:00 às 19:00<br/>Sábados: 08:00 às 12:00</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-secondary text-3xl">call</span>
+<div>
+<h4 class="font-bold text-lg text-primary">Contato</h4>
+<p class="text-on-surface-variant">(31) 99999-9999<br/>contato@omclagoasanta.com.br</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-blue-950 dark:bg-slate-950 text-white py-16 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<div class="text-3xl font-black text-white italic mb-6">OMC</div>
+<p class="font-['Manrope'] text-sm leading-relaxed text-blue-100/60">Sua clínica odontológica de referência em Lagoa Santa. Transformando vidas através do sorriso.</p>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-secondary-fixed uppercase text-xs tracking-widest">Navegação</h4>
+<div class="flex flex-col gap-4">
+<a class="text-blue-100/80 hover:text-white transition-colors hover:translate-x-1" href="#">Início</a>
+<a class="text-blue-100/80 hover:text-white transition-colors hover:translate-x-1" href="#">Especialidades</a>
+<a class="text-blue-100/80 hover:text-white transition-colors hover:translate-x-1" href="#">Implantes</a>
+<a class="text-blue-100/80 hover:text-white transition-colors hover:translate-x-1 text-yellow-500 font-bold" href="#">Sobre Nós</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-secondary-fixed uppercase text-xs tracking-widest">Legal</h4>
+<div class="flex flex-col gap-4">
+<a class="text-blue-100/80 hover:text-white transition-colors hover:translate-x-1" href="#">Privacidade</a>
+<a class="text-blue-100/80 hover:text-white transition-colors hover:translate-x-1" href="#">Termos de Uso</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-secondary-fixed uppercase text-xs tracking-widest">Redes Sociais</h4>
+<div class="flex flex-col gap-4">
+<a class="text-blue-100/80 hover:text-white transition-colors hover:translate-x-1 flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-sm">groups</span> Instagram
+                    </a>
+<a class="text-blue-100/80 hover:text-white transition-colors hover:translate-x-1 flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-sm">social_leaderboard</span> Facebook
+                    </a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 text-center">
+<p class="font-['Manrope'] text-sm leading-relaxed text-blue-100/40">© 2024 OdontoMedCenter Lagoa Santa. Todos os direitos reservados.</p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/90 dark:bg-blue-950/90 backdrop-blur-xl shadow-[0_-10px_40px_rgba(0,0,0,0.1)] rounded-t-3xl border-t border-white/20 z-50">
+<div class="flex flex-col items-center justify-center bg-yellow-600/10 text-yellow-700 dark:text-yellow-500 rounded-xl px-3 py-1">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[11px] font-['Manrope'] font-semibold uppercase tracking-wider">Início</span>
+</div>
+<div class="flex flex-col items-center justify-center text-blue-900/60 dark:text-blue-100/60">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="text-[11px] font-['Manrope'] font-semibold uppercase tracking-wider">Agendar</span>
+</div>
+<div class="flex flex-col items-center justify-center text-blue-900/60 dark:text-blue-100/60">
+<span class="material-symbols-outlined">chat</span>
+<span class="text-[11px] font-['Manrope'] font-semibold uppercase tracking-wider">WhatsApp</span>
+</div>
+<div class="flex flex-col items-center justify-center text-blue-900/60 dark:text-blue-100/60">
+<span class="material-symbols-outlined">location_on</span>
+<span class="text-[11px] font-['Manrope'] font-semibold uppercase tracking-wider">Local</span>
+</div>
+</nav>
+<!-- Floating WhatsApp -->
+<a class="fixed bottom-24 right-6 md:bottom-10 md:right-10 bg-[#25D366] text-white p-4 rounded-full shadow-2xl z-40 transition-transform hover:scale-110 active:scale-95" href="https://wa.me/5531999999999">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">chat</span>
+</a>
+</body></html>

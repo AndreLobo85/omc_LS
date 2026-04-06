@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#495b9b",
+                    "outline-variant": "#c5c5d2",
+                    "error": "#ba1a1a",
+                    "primary-fixed": "#dce1ff",
+                    "primary": "#001754",
+                    "on-surface": "#1a1c1c",
+                    "background": "#faf9f8",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#dadad9",
+                    "on-primary-fixed": "#00164f",
+                    "secondary-fixed": "#ffdea3",
+                    "surface-container-high": "#e9e8e7",
+                    "surface-container-highest": "#e3e2e1",
+                    "tertiary-container": "#34332c",
+                    "surface-container-low": "#f4f3f2",
+                    "on-primary-fixed-variant": "#304381",
+                    "on-tertiary-fixed": "#1c1c15",
+                    "on-secondary-fixed-variant": "#594312",
+                    "surface-bright": "#faf9f8",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "outline": "#757681",
+                    "on-background": "#1a1c1c",
+                    "inverse-surface": "#2f3130",
+                    "secondary-fixed-dim": "#e3c285",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-primary": "#b6c4ff",
+                    "tertiary": "#1f1e17",
+                    "on-tertiary-container": "#9e9b91",
+                    "surface-variant": "#e3e2e1",
+                    "surface-container": "#eeeeed",
+                    "secondary": "#735b28",
+                    "primary-container": "#1a2e6c",
+                    "secondary-container": "#fedb9c",
+                    "on-tertiary-fixed-variant": "#48473f",
+                    "on-surface-variant": "#454650",
+                    "inverse-on-surface": "#f1f0f0",
+                    "tertiary-fixed-dim": "#cac6bc",
+                    "on-secondary-container": "#785f2b",
+                    "error-container": "#ffdad6",
+                    "surface": "#faf9f8",
+                    "primary-fixed-dim": "#b6c4ff",
+                    "on-primary-container": "#8698dc",
+                    "tertiary-fixed": "#e6e2d7",
+                    "on-secondary-fixed": "#261900"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            shadow: 0px 10px 40px rgba(26, 28, 28, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-blue-950/80 backdrop-blur-md shadow-[0px_10px_40px_rgba(26,28,28,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-blue-950 dark:text-white tracking-tighter font-headline">OMC</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-blue-800/70 dark:text-blue-200/70 hover:text-yellow-700 transition-colors font-headline font-bold tracking-tight" href="#">Início</a>
+<a class="text-blue-800/70 dark:text-blue-200/70 hover:text-yellow-700 transition-colors font-headline font-bold tracking-tight" href="#">Especialidades</a>
+<a class="text-blue-900 dark:text-white border-b-2 border-yellow-600 pb-1 font-headline font-bold tracking-tight" href="#">Implantes</a>
+<a class="text-blue-800/70 dark:text-blue-200/70 hover:text-yellow-700 transition-colors font-headline font-bold tracking-tight" href="#">Sobre Nós</a>
+<a class="text-blue-800/70 dark:text-blue-200/70 hover:text-yellow-700 transition-colors font-headline font-bold tracking-tight" href="#">Depoimentos</a>
+<a class="text-blue-800/70 dark:text-blue-200/70 hover:text-yellow-700 transition-colors font-headline font-bold tracking-tight" href="#">Contato</a>
+</div>
+<button class="bg-primary-container text-white px-6 py-2.5 rounded-xl font-bold font-headline scale-95 active:opacity-80 transition-transform shadow-lg">
+                Agendar Avaliação
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 z-10">
+<span class="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Excelência em Implantodontia</span>
+<h1 class="text-primary font-headline font-black text-5xl lg:text-7xl leading-[1.1] mb-8 tracking-tighter">
+                    Implante Dentário em <span class="text-secondary">Lagoa Santa</span>
+</h1>
+<p class="text-on-surface-variant text-lg max-w-xl mb-10 leading-relaxed">
+                    Recupere sua autoestima e a funcionalidade do seu sorriso com tecnologia de ponta e o conforto que você merece. O cuidado clínico que você busca, com o resultado estético que você sonha.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary text-white px-8 py-4 rounded-xl font-bold font-headline shadow-xl hover:bg-secondary-fixed-dim transition-all">
+                        Quero agendar meu implante
+                    </button>
+<div class="flex items-center gap-3 px-6 py-4 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-primary font-bold text-sm">98.8% de Sucesso Clínico</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 relative h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+<!-- Visual representation of Before/After Split -->
+<div class="absolute inset-0 flex">
+<div class="w-1/2 h-full overflow-hidden relative">
+<img class="absolute inset-0 w-full h-full object-cover grayscale opacity-60" data-alt="Close up of a patient with missing teeth in the lateral area, neutral clinical lighting, realistic dental medical photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8R7NxCh0r99fR4oaoiXoajbTZbfXmyc6wVPMQ5P3r__QEW_2vdlyMAM8a3cZX9RiSLKB80_yN26UJqz7fAhGHVHscLa9ZGvgZuGo3w6QVK00Zwe761yw8qBqxpQMbBiIfcp6cxkdelNGVRUo0wUfSeOHp7DqoiD2uXoooiaYylWTQudLpF-n5rFv7dWcqhi_za8bIXSCtu0WE_NYXMTLByc9crLiNRrkzmJSH8dndW5LSatRg_R6yaMK5o8vLSmI68cGzJ3OPjhfq"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+<div class="absolute top-4 left-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded text-white text-xs font-bold uppercase tracking-widest">Antes</div>
+</div>
+<div class="w-1/2 h-full overflow-hidden relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Close up of a radiant smile with perfectly restored white teeth after dental implant surgery, high-end studio lighting, editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG5KWQCDg13A6_sRdouqMN4ZJlvlNGkyyJVwOA-Lc6w1gb5kE-g-ZiIO5JDPzIUgB5kmc70yQM8eZBiDi-y2iSYZGIDfr-yDHfvms5a4rpIBLUJxQ3r-hS-n4r5Uqg0dx0G-d7dTiOx01FpzNu08E_nwomQd7GTTfq0JFA222zY_dEZ62Ab_O5lPRJSwcNLCxAU6PLiCR5hOcqlcvjgQdyQsmZ6HbE6-12_hLnJdJh625XZ7ZUc9zMPCx6jBZrHzkKtRUqVIbnv1XC"/>
+<div class="absolute top-4 right-4 bg-secondary/80 backdrop-blur-md px-3 py-1 rounded text-white text-xs font-bold uppercase tracking-widest">Depois</div>
+</div>
+<!-- Split Handle -->
+<div class="absolute left-1/2 top-0 bottom-0 w-1 bg-white/50 backdrop-blur-sm z-20 shadow-xl">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">unfold_more</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Differentiators Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-primary font-headline font-black text-4xl mb-4">Por que escolher a OMC para seu implante?</h2>
+<div class="w-20 h-1.5 bg-secondary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-[0px_10px_40px_rgba(26,28,28,0.06)] hover:-translate-y-2 transition-transform duration-300">
+<div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+</div>
+<h3 class="text-primary font-headline font-bold text-xl mb-3">Cirurgia Guiada</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Procedimentos planejados digitalmente em 3D, garantindo maior precisão e menor trauma cirúrgico.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-[0px_10px_40px_rgba(26,28,28,0.06)] hover:-translate-y-2 transition-transform duration-300">
+<div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">biotech</span>
+</div>
+<h3 class="text-primary font-headline font-bold text-xl mb-3">Sedação Consciente</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Opção de sedação para que você realize seu procedimento com total tranquilidade e ausência de ansiedade.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-[0px_10px_40px_rgba(26,28,28,0.06)] hover:-translate-y-2 transition-transform duration-300">
+<div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<h3 class="text-primary font-headline font-bold text-xl mb-3">Marcas Premium</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Trabalhamos exclusivamente com os melhores sistemas de implantes do mundo, garantindo longevidade.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-[0px_10px_40px_rgba(26,28,28,0.06)] hover:-translate-y-2 transition-transform duration-300">
+<div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">history_edu</span>
+</div>
+<h3 class="text-primary font-headline font-bold text-xl mb-3">Corpo Docente</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Nossos especialistas são referência na área, com vasta experiência em casos de alta complexidade.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Straumann Deep-Dive Section -->
+<section class="py-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<img class="rounded-[40px] shadow-2xl relative z-10 w-full aspect-square object-cover" data-alt="Technical illustration style photo of a titanium dental implant macro shot, blue aesthetic clinical background, sharp focus on surface texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-dpXyE3O7ximHVREnxhNshfV6S7RPzvy4iVrxaV799qWNHIEyd22tvy2nBcz2pW0gkDq1N_nH3eGnku5-2UFXtdSRyU3L7OgTVCElhO-lJW0lhxZD1bvIuts7i35xVZWo2sM3gEGz4y8wjU5F8DxLI8wWhAM7l6C45016PMhCPX-iqHzOOEGAVtF2-JwugGdcJMu_DMkiO8ewduoiX4rXj5yPebV5YJHMXPnGsP2aAM1v_s-zhuyEhvT7r6pl2wkStI9Kt9H9f1u0"/>
+<div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-3xl shadow-xl z-20 flex flex-col gap-2 border border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="text-secondary font-black text-3xl font-headline">98%+</span>
+<span class="text-on-surface-variant text-xs font-bold leading-tight">TAXA DE<br/>SUCESSO</span>
+</div>
+</div>
+</div>
+<div>
+<img class="h-10 mb-6 object-contain opacity-80" data-alt="Logo placeholder for Straumann dental brand, minimalist luxury medical branding aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtB1bmXc_isCrDOCJt6JX4h-LSeR16M1cqvHKqGLvavqQWIiROdcxE8gwu4HjKxnHpaU0UFu-iBXeZWzQmeW9sPdYAHhPvngFwMySVMCYiTBbVBmI3TzgGPOmDMUSWCebqxpBAESTWNVA1B50JYExPgY4S_1EfexhOE8iYTxdNnX3ocI4VJiNYb562NU62a_3N-bFPN_-HgB62RQ5IarrJngE17MXoi51WivMC6YoORtjhDeu5Hpp2fOidu80z0XWIncwxKeGnFc0d"/>
+<h2 class="text-primary font-headline font-black text-4xl mb-6">A Melhor Tecnologia do Mundo: Straumann®</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Na OMC, não aceitamos menos que a perfeição. Por isso, somos parceiros da Straumann, líder mundial em implantodontia. Os implantes Straumann são projetados para durar a vida toda, com tecnologia que acelera a cicatrização e garante a estabilidade do osso ao redor do implante.
+                    </p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<div>
+<strong class="text-primary block font-headline">Superfície SLActive®</strong>
+<span class="text-on-surface-variant text-sm italic">Cicatrização até 3x mais rápida em comparação a implantes convencionais.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<div>
+<strong class="text-primary block font-headline">Material Roxolid®</strong>
+<span class="text-on-surface-variant text-sm italic">Maior resistência que o titânio puro, permitindo implantes menores e menos invasivos.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<div>
+<strong class="text-primary block font-headline">Garantia Vitalícia</strong>
+<span class="text-on-surface-variant text-sm italic">Suporte global e garantia de substituição do componente original.</span>
+</div>
+</li>
+</ul>
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-bold font-headline shadow-lg hover:bg-primary-container transition-all">
+                        Verificar se meu caso é compatível
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Treatment Timeline -->
+<section class="py-24 bg-primary text-white">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="font-headline font-black text-4xl mb-4">Sua Jornada de Transformação</h2>
+<p class="text-blue-200/80 max-w-2xl mx-auto">Um processo transparente, seguro e focado no seu conforto em cada etapa.</p>
+</div>
+<div class="relative">
+<!-- Progress Line -->
+<div class="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-secondary/30 -translate-y-1/2"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-secondary text-primary rounded-full flex items-center justify-center font-black text-xl mb-6 shadow-[0_0_30px_rgba(115,91,40,0.5)] border-4 border-primary">
+                            01
+                        </div>
+<h4 class="font-headline font-bold text-xl mb-3">Avaliação 3D</h4>
+<p class="text-blue-100/70 text-sm leading-relaxed">Exames de imagem e planejamento digital para definir a estratégia exata do seu tratamento.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-secondary text-primary rounded-full flex items-center justify-center font-black text-xl mb-6 shadow-[0_0_30px_rgba(115,91,40,0.5)] border-4 border-primary">
+                            02
+                        </div>
+<h4 class="font-headline font-bold text-xl mb-3">A Cirurgia</h4>
+<p class="text-blue-100/70 text-sm leading-relaxed">Colocação do implante com tecnologia guiada. Rápido, preciso e com opção de sedação.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-secondary text-primary rounded-full flex items-center justify-center font-black text-xl mb-6 shadow-[0_0_30px_rgba(115,91,40,0.5)] border-4 border-primary">
+                            03
+                        </div>
+<h4 class="font-headline font-bold text-xl mb-3">Osseointegração</h4>
+<p class="text-blue-100/70 text-sm leading-relaxed">Período onde o implante se une ao osso. Com Straumann SLActive, este tempo é reduzido.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-secondary text-primary rounded-full flex items-center justify-center font-black text-xl mb-6 shadow-[0_0_30px_rgba(115,91,40,0.5)] border-4 border-primary">
+                            04
+                        </div>
+<h4 class="font-headline font-bold text-xl mb-3">A Coroa Final</h4>
+<p class="text-blue-100/70 text-sm leading-relaxed">Instalação da prótese definitiva em cerâmica, restaurando a estética e a função mastigatória.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing/Financing Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-white rounded-[48px] p-12 lg:p-20 shadow-2xl overflow-hidden relative border border-secondary/10">
+<div class="absolute top-0 right-0 w-96 h-96 bg-secondary/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-primary font-headline font-black text-4xl mb-6">Invista no seu maior patrimônio: Você.</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                            Na OMC Lagoa Santa, acreditamos que um sorriso saudável deve ser acessível. Por isso, oferecemos planos personalizados e condições que cabem no seu orçamento.
+                        </p>
+<div class="bg-surface-container-low p-8 rounded-3xl border-l-8 border-secondary mb-8">
+<h3 class="text-primary font-headline font-bold text-2xl mb-2">Parcele seu sorriso em até 24x</h3>
+<p class="text-on-surface-variant">Trabalhamos com parcelamento facilitado no cartão de crédito e opções exclusivas via financiamento odontológico.</p>
+</div>
+<div class="flex gap-4">
+<div class="bg-surface-container-high px-4 py-2 rounded-full text-primary font-bold text-xs uppercase tracking-tighter">Boleto</div>
+<div class="bg-surface-container-high px-4 py-2 rounded-full text-primary font-bold text-xs uppercase tracking-tighter">Cartão de Crédito</div>
+<div class="bg-surface-container-high px-4 py-2 rounded-full text-primary font-bold text-xs uppercase tracking-tighter">PIX com Desconto</div>
+</div>
+</div>
+<div class="relative">
+<img class="rounded-[32px] shadow-xl w-full h-[400px] object-cover" data-alt="Doctor talking to a patient about dental financing plan on a tablet in a bright high-end modern clinic office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnSHnE7uJt4fhZrT1WlxskdaA7TEanusP7ixA4pebleeCy7vOkMYBbfw6JPPOIO6jNCcKNCngxk1VwxW7BuKFp3OacISXpeL06MH-G59kUoJlaU-zPlnOxroqkPq5YdNFFH8NKOthr6jAudse0jb6EwEKaIuFYFxqyhgfANN1aqW4ENwEInUcbX5uyI3IDpWqFmBkTgGeTNVnpm-11xE_JIIFQVhHdN1mVrbWCC-CnKIk13b7ufRVEg2aMAvHBrK1e7Ct8E5pfkNgR"/>
+<div class="absolute -bottom-6 -left-6 bg-secondary text-white p-10 rounded-3xl shadow-2xl">
+<div class="text-center">
+<span class="block text-sm uppercase tracking-widest font-bold mb-1">Parcelas a partir de</span>
+<span class="block font-headline font-black text-5xl">R$ 199*</span>
+<span class="block text-[10px] opacity-70 mt-2">*Consulte condições na avaliação presencial</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-24">
+<div class="max-w-4xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-primary font-headline font-black text-4xl mb-4">Dúvidas Frequentes</h2>
+<p class="text-on-surface-variant">Esclarecemos os principais pontos sobre o seu futuro sorriso.</p>
+</div>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<details class="group bg-surface-container-low rounded-2xl p-6 cursor-pointer border border-transparent hover:border-secondary/20 transition-all">
+<summary class="flex justify-between items-center font-headline font-bold text-primary list-none">
+                        Dói para colocar o implante?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant text-sm leading-relaxed">Não! O procedimento é realizado sob anestesia local potente. Na OMC, também oferecemos a opção de sedação consciente, garantindo que o paciente fique totalmente relaxado e não sinta absolutamente nada durante a cirurgia.</p>
+</details>
+<!-- FAQ Item 2 -->
+<details class="group bg-surface-container-low rounded-2xl p-6 cursor-pointer border border-transparent hover:border-secondary/20 transition-all">
+<summary class="flex justify-between items-center font-headline font-bold text-primary list-none">
+                        Quanto tempo dura um implante?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant text-sm leading-relaxed">Os implantes são projetados para serem uma solução definitiva. Com higiene adequada e visitas regulares ao dentista, eles podem durar a vida toda, especialmente utilizando marcas premium como a Straumann.</p>
+</details>
+<!-- FAQ Item 3 -->
+<details class="group bg-surface-container-low rounded-2xl p-6 cursor-pointer border border-transparent hover:border-secondary/20 transition-all">
+<summary class="flex justify-between items-center font-headline font-bold text-primary list-none">
+                        Existe rejeição do implante?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant text-sm leading-relaxed">Não existe o termo "rejeição" para o titânio, pois ele é um material biocompatível. O que pode ocorrer é a não integração do implante ao osso por infecção ou tabagismo, mas nossas taxas de sucesso superam os 98%.</p>
+</details>
+<!-- FAQ Item 4 -->
+<details class="group bg-surface-container-low rounded-2xl p-6 cursor-pointer border border-transparent hover:border-secondary/20 transition-all">
+<summary class="flex justify-between items-center font-headline font-bold text-primary list-none">
+                        Vou ficar sem dentes durante o tratamento?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant text-sm leading-relaxed">De forma alguma. Dependendo do caso, podemos realizar a carga imediata (dente no mesmo dia) ou providenciar próteses provisórias estéticas para que você nunca fique sem sorrir.</p>
+</details>
+<!-- FAQ Item 5 -->
+<details class="group bg-surface-container-low rounded-2xl p-6 cursor-pointer border border-transparent hover:border-secondary/20 transition-all">
+<summary class="flex justify-between items-center font-headline font-bold text-primary list-none">
+                        Qualquer pessoa pode colocar implantes?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant text-sm leading-relaxed">A maioria dos adultos saudáveis pode. Condições como diabetes e hipertensão devem estar controladas. Faremos uma avaliação completa da sua saúde sistêmica antes de iniciar.</p>
+</details>
+<!-- FAQ Item 6 -->
+<details class="group bg-surface-container-low rounded-2xl p-6 cursor-pointer border border-transparent hover:border-secondary/20 transition-all">
+<summary class="flex justify-between items-center font-headline font-bold text-primary list-none">
+                        E se eu não tiver osso suficiente?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant text-sm leading-relaxed">Realizamos procedimentos de enxerto ósseo avançado e técnicas de levantamento de seio maxilar para reconstruir a estrutura necessária e permitir a colocação segura dos implantes.</p>
+</details>
+<!-- FAQ Item 7 -->
+<details class="group bg-surface-container-low rounded-2xl p-6 cursor-pointer border border-transparent hover:border-secondary/20 transition-all">
+<summary class="flex justify-between items-center font-headline font-bold text-primary list-none">
+                        Quanto tempo demora a recuperação?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant text-sm leading-relaxed">A recuperação inicial (pós-operatório) leva de 3 a 7 dias com cuidados leves. A cicatrização total do osso varia de 4 a 12 semanas com as tecnologias modernas que utilizamos.</p>
+</details>
+<!-- FAQ Item 8 -->
+<details class="group bg-surface-container-low rounded-2xl p-6 cursor-pointer border border-transparent hover:border-secondary/20 transition-all">
+<summary class="flex justify-between items-center font-headline font-bold text-primary list-none">
+                        Implante importado é realmente melhor?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant text-sm leading-relaxed">Marcas como a Straumann possuem décadas de pesquisas científicas e tecnologias de superfície patenteadas que garantem maior previsibilidade, rapidez e durabilidade ao tratamento.</p>
+</details>
+</div>
+</div>
+</section>
+<!-- Lead Gen Form Section -->
+<section class="py-24 bg-surface-container-low relative">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-5">
+<h2 class="text-primary font-headline font-black text-4xl mb-6">Solicitar Avaliação Gratuita</h2>
+<p class="text-on-surface-variant text-lg mb-8">Dê o primeiro passo para o sorriso dos seus sonhos. Nossa equipe entrará em contato para agendar seu horário com um especialista.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4 text-primary">
+<div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-700">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+</div>
+<div>
+<span class="block text-xs uppercase font-bold text-on-surface-variant">WhatsApp</span>
+<span class="font-bold">(31) 98765-4321</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-primary">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-700">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div>
+<span class="block text-xs uppercase font-bold text-on-surface-variant">Endereço</span>
+<span class="font-bold">Av. Principal, 123 - Lagoa Santa</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<form class="bg-white p-10 rounded-[32px] shadow-2xl space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold text-primary mb-2">Nome Completo</label>
+<input class="w-full bg-surface-container-high border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary transition-all" placeholder="Seu nome" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-primary mb-2">Telefone / WhatsApp</label>
+<input class="w-full bg-surface-container-high border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary transition-all" placeholder="(00) 00000-0000" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-bold text-primary mb-2">Mensagem (Opcional)</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary transition-all" placeholder="Conte-nos brevemente seu objetivo..." rows="4"></textarea>
+</div>
+<button class="w-full bg-secondary text-white font-headline font-black py-4 rounded-xl shadow-xl hover:bg-secondary-fixed-dim transition-all text-lg uppercase tracking-tight" type="submit">
+                        Enviar Solicitação
+                    </button>
+<p class="text-[10px] text-center text-on-surface-variant/60">Ao enviar, você concorda com nossa política de privacidade e tratamento de dados.</p>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-blue-950 text-white py-16 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<div class="text-3xl font-black text-white italic mb-6">OMC</div>
+<p class="text-blue-100/80 text-sm leading-relaxed font-body">OdontoMedCenter Lagoa Santa: Transformando vidas através de sorrisos saudáveis e reabilitação oral de alta performance.</p>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-yellow-500 font-headline uppercase text-xs tracking-widest">Navegação</h4>
+<ul class="space-y-4">
+<li><a class="text-blue-100/80 hover:text-white transition-colors font-body text-sm hover:translate-x-1 inline-block transition-transform" href="#">Início</a></li>
+<li><a class="text-blue-100/80 hover:text-white transition-colors font-body text-sm hover:translate-x-1 inline-block transition-transform" href="#">Especialidades</a></li>
+<li><a class="text-yellow-500 font-bold font-body text-sm hover:translate-x-1 inline-block transition-transform" href="#">Implantes</a></li>
+<li><a class="text-blue-100/80 hover:text-white transition-colors font-body text-sm hover:translate-x-1 inline-block transition-transform" href="#">Sobre Nós</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-yellow-500 font-headline uppercase text-xs tracking-widest">Contatos</h4>
+<ul class="space-y-4">
+<li class="text-blue-100/80 text-sm font-body">Lagoa Santa, MG</li>
+<li class="text-blue-100/80 text-sm font-body">(31) 3661-0000</li>
+<li><a class="text-blue-100/80 hover:text-white transition-colors font-body text-sm hover:translate-x-1 inline-block transition-transform" href="#">Instagram</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-yellow-500 font-headline uppercase text-xs tracking-widest">Atendimento</h4>
+<p class="text-blue-100/80 text-sm font-body">Segunda a Sexta: 08h às 19h</p>
+<p class="text-blue-100/80 text-sm font-body mt-2">Sábado: 08h às 12h</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 text-center text-blue-100/50 text-xs">
+            © 2024 OdontoMedCenter Lagoa Santa. Todos os direitos reservados.
+        </div>
+</footer>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/90 dark:bg-blue-950/90 backdrop-blur-xl z-50 rounded-t-3xl border-t border-white/20 shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
+<div class="flex flex-col items-center justify-center text-blue-900/60 dark:text-blue-100/60 tap-highlight-transparent transition-all">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[11px] font-['Manrope'] font-semibold uppercase tracking-wider">Início</span>
+</div>
+<div class="flex flex-col items-center justify-center text-blue-900/60 dark:text-blue-100/60 tap-highlight-transparent transition-all">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="text-[11px] font-['Manrope'] font-semibold uppercase tracking-wider">Agendar</span>
+</div>
+<div class="flex flex-col items-center justify-center text-blue-900/60 dark:text-blue-100/60 tap-highlight-transparent transition-all">
+<span class="material-symbols-outlined">chat</span>
+<span class="text-[11px] font-['Manrope'] font-semibold uppercase tracking-wider">WhatsApp</span>
+</div>
+<div class="flex flex-col items-center justify-center text-blue-900/60 dark:text-blue-100/60 tap-highlight-transparent transition-all">
+<span class="material-symbols-outlined">location_on</span>
+<span class="text-[11px] font-['Manrope'] font-semibold uppercase tracking-wider">Local</span>
+</div>
+</nav>
+</body></html>
