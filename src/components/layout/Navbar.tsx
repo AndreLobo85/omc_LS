@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { whatsappUrl } from "@/lib/constants";
@@ -17,13 +18,17 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-[0px_10px_40px_rgba(26,28,28,0.06)]">
+    <nav className="fixed top-0 w-full z-50 bg-white shadow-[0px_2px_20px_rgba(26,28,28,0.08)]">
       <div className="flex justify-between items-center px-6 lg:px-8 py-4 max-w-7xl mx-auto">
-        <Link
-          href="/"
-          className="text-2xl font-black text-blue-950 tracking-tighter font-[family-name:var(--font-inter)]"
-        >
-          OMC
+        <Link href="/">
+          <Image
+            src="/logo-omc.png"
+            alt="OdontoMedCenter"
+            width={180}
+            height={48}
+            className="h-10 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
